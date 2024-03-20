@@ -2,7 +2,7 @@ Backlog
 
 2. Mejorar el guardado de datos históricos
 3. Validar que los valores de los cuadros sean los correctos
-3. Crear codigo para alertas correo
+4. Crear codigo para alertas correo
 
 streamlit run web_page.py
 
