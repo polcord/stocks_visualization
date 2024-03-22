@@ -2,19 +2,20 @@ import yfinance as yf
 from datetime import datetime
 import pandas as pd
 
-def get_data(symbol):
+def get_info(symbol, start_date):
     
     # Obtén la fecha de hoy
     hoy = datetime.today().strftime('%Y-%m-%d')
 
-    # Descarga los datos históricos de la acción desde el 1 de enero de 2020 hasta hoy
-    data = yf.download(symbol, start='2020-01-01', end=hoy)
+    # Descarga los datos históricos de la acción una fecha de inicio delimitada hasta hoy
+    data = yf.download(symbol, start=start_date, end=hoy)
 
     return data
 
-def save_excel(stock_name):
+
+def save_excel(stock_name, start_date):
     
-    data = get_data(stock_name)
+    data = get_info(stock_name, start_date)
 
     # Escribir hoja de Excel
     writer = pd.ExcelWriter('price_evolution.xlsx', engine='openpyxl')
