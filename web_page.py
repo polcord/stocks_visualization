@@ -1,6 +1,5 @@
 import streamlit as st
 from get_data import get_info
-from get_data import save_excel
 from plotting_stock import plot_stocks
 
 # Definir fecha de inicio histórico

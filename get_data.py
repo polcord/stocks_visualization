@@ -11,14 +11,3 @@ def get_info(symbol, start_date):
     data = yf.download(symbol, start=start_date, end=hoy)
 
     return data
-
-
-def save_excel(stock_name, start_date):
-    
-    data = get_info(stock_name, start_date)
-
-    # Escribir hoja de Excel
-    writer = pd.ExcelWriter('price_evolution.xlsx', engine='openpyxl')
-    data.to_excel(writer, sheet_name=stock_name, index=True)
-    writer.close()
-
