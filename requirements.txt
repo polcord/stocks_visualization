@@ -1,4 +1,3 @@
 yfinance==0.2.37
 plotly==5.20.0
-sktime==0.29.0
 pandas==2.2.1
