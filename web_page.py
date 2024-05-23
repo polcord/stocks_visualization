@@ -7,10 +7,11 @@ fecha_inicio = '2021-01-01'
 
 # Acciones y fechas de compras que quieres graficar
 stock_dict = {'BTC-USD': '2024-03-14', 'ETH-USD':'2024-03-25',
-              'AAPL': '2024-03-15', 
+              'AAPL': '2024-03-15', 'AMZN': '2024-05-22', 'GOOG': '2024-05-22', 
               'SMH': '2024-03-14', 'NVDA':'2024-03-25', 'ASML': '2024-03-26', 'TSM': '2024-03-26',
-              'GLD': '2024-03-25',
-              'NVO': '2024-03-26'}
+              'GLD': '2024-03-25', 'COPX': '2024-05-22',
+              'NVO': '2024-03-26',
+              'JPM': '2024-05-22'}
 
 def main():
     st.title('Gráficos de activos financieros')
