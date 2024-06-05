@@ -6,7 +6,7 @@ from plotting_stock import plot_stocks
 fecha_inicio = '2021-01-01'
 
 # Acciones y fechas de compras que quieres graficar
-stock_dict = {'BTC-USD': '2024-03-14', 'ETH-USD':'2024-03-25',
+stock_dict = {'BTC-USD': '2024-03-14', 'ETH-USD':'2024-03-25', 'SHIB-USD': '2024-03-21',
               'AAPL': '2024-03-15', 'AMZN': '2024-05-22', 'GOOG': '2024-05-22', 
               'SMH': '2024-03-14', 'NVDA':'2024-03-25', 'ASML': '2024-03-26', 'TSM': '2024-03-26',
               'GLD': '2024-03-25', 'COPX': '2024-05-22',
