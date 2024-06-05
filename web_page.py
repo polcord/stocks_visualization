@@ -29,7 +29,7 @@ def main():
 
         with col2:
             last_date = data.index[-1].strftime('%Y-%m-%d')
-            last_value = data["Close"].iloc[-1].round(2).item()
+            last_value = data["Close"].iloc[-1].round(6).item()
             variation = round((last_value - buying_price) / buying_price * 100, 2)
             st.metric(label=f"Recent Price ({last_date})", value=f"${last_value}", delta=f"{variation} %")
 
