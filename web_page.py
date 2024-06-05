@@ -6,7 +6,7 @@ from plotting_stock import plot_stocks
 fecha_inicio = '2021-01-01'
 
 # Acciones y fechas de compras que quieres graficar
-stock_dict = {'BTC-USD': '2024-03-14', 'ETH-USD':'2024-03-25', 'SHIB-USD': '2024-03-21',
+stock_dict = {'BTC-USD': '2024-03-14', 'ETH-USD': '2024-03-25', 'SHIB-USD': '2024-03-21',
               'AAPL': '2024-03-15', 'AMZN': '2024-05-22', 'GOOG': '2024-05-22', 
               'SMH': '2024-03-14', 'NVDA':'2024-03-25', 'ASML': '2024-03-26', 'TSM': '2024-03-26',
               'GLD': '2024-03-25', 'COPX': '2024-05-22',
@@ -24,7 +24,7 @@ def main():
         # Mostrar precios de compra y reciente
         col1, col2 = st.columns(2)
         with col1:
-            buying_price = data.loc[fecha_compra, 'Close'].round(2).item()
+            buying_price = data.loc[fecha_compra, 'Close'].round(6).item()
             st.metric(label=f"Buying Price ({fecha_compra})", value=f"${buying_price}")
 
         with col2:
